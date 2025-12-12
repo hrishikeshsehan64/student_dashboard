@@ -3,14 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Student Dashboard - Home</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <aside></aside>
-    <aside></aside>
-    <footer></footer>
+    <nav class="navbar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="fees.html">Fees</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>Welcome Back, Student!</h1>
+        <p>Here is your dashboard summary.</p>
+    </header>
+    <main class="container">
+        <section class="summary">
+            <div class="card">
+                <h3>Total Courses</h3>
+                <p>6</p>
+            </div>
+            <div class="card">
+                <h3>Assignments Due</h3>
+                <p>3</p>
+            </div>
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>92%</p>
+            </div>
+            <div class="card">
+                <h3>Next Exam</h3>
+                <p>Math – Monday</p>
+            </div>
+        </section>
+
+        <section class="assignments">
+            
+            <h2>📘 Assignment Tracker</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Title</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Science</td>
+                        <td>Chapter 5 Notes</td>
+                        <td>12 Dec</td>
+                        <td><span class="pending">Pending</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Math</td>
+                        <td>Algebra Worksheet</td>
+                        <td>13 Dec</td>
+                        <td><span class="completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>English</td>
+                        <td>Essay Writing</td>
+                        <td>15 Dec</td>
+                        <td><span class="pending">Pending</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --card: #ffffff;
+    --shadow: rgba(0,0,0,0.1);
+    --navbar: #4A90E2;
+}
+
+.dark {
+    --bg: #1a1a1a;
+    --text: #eeeeee;
+    --card: #2a2a2a;
+    --shadow: rgba(255,255,255,0.1);
+    --navbar: #111;
+}
+
