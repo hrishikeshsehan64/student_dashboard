@@ -99,6 +99,10 @@ body {
     color: #5cb85c;
 }
 
+/*-------------------------------------------------------------------*/
+
+
+
 .simple-page {
     padding: 40px;
 }
@@ -109,6 +113,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 3px 8px var(--shadow);
 }
+
+/*-------------------------------------------------------------------*/
+
 td{
     text-align: center;
 }
@@ -122,4 +129,74 @@ td{
     .summary {
         grid-template-columns: 1fr;
     }
+}
+.cal { 
+    display: grid; 
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 4px; 
+    background: var(--table-border); 
+    padding: 6px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--shadow);
+}
+
+/* DAY CELLS */
+.cal div { 
+    background: var(--card-bg);
+    padding: 1.2rem 0.5rem; 
+    text-align: center; 
+    min-height: 90px; 
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 15px;
+    box-shadow: 0 2px 6px var(--shadow);
+    transition: 0.2s;
+}
+
+/* HEADER CELLS (Mon, Tue, Wed...) */
+.cal .head { 
+    font-weight: 700; 
+    color: var(--text); 
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.8rem; 
+    min-height: auto; 
+    box-shadow: none;
+}
+
+/* TODAY HIGHLIGHT */
+.today { 
+    background: #4A90E2 !important; 
+    color: white !important; 
+    border: none !important;
+    box-shadow: 0 0 10px rgba(74,144,226,0.7);
+    font-weight: bold;
+}
+
+/* EVENT TAG INSIDE A DATE */
+.event { 
+    background: rgba(74,144,226,0.15); 
+    padding: 0.5rem; 
+    margin-top: 0.6rem; 
+    border-left: 4px solid #4A90E2; 
+    border-radius: 6px; 
+    font-size: 13px;
+    text-align: left;
+}
+
+/* DARK MODE FIXES */
+.dark .cal .head {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.dark .event {
+    background: rgba(74,144,226,0.25);
+    border-left-color: #6bb3ff;
+}
+
+.dark .today {
+    background: #6bb3ff !important;
+    box-shadow: 0 0 12px rgba(100,160,255,0.8);
+}
+#h2{
+    text-align: center;
 }
